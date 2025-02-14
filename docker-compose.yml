@@ -1,0 +1,9 @@
+services:
+  analysis-env:
+    image: rocker/rstudio:4.4.2 #locally run docker
+    ports:
+      - "7777:8787"
+    volumes:
+      - .:/home/rstudio/work
+    environment:
+      PASSWORD: "password"
